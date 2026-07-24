@@ -1,0 +1,6 @@
+{
+  "name": "PackTrack",
+  "description": "Automated Packaging Approval System with real-time analytics, secure database, profiling, and country/product-segregated audit trail reporting.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

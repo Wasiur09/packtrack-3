@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600;700&family=Dancing+Script:wght@600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "DM Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-display: "Bebas Neue", sans-serif;
+  --font-signature: "Dancing Script", "Segoe Script", cursive;
+
+  --color-bg: #0d0f12;
+  --color-surface: #13161b;
+  --color-surface-hover: #1a1e26;
+  --color-surface-active: #222733;
+  --color-border: #2a3040;
+  --color-accent: #f5a623;
+  --color-accent-hover: #f0b84a;
+  --color-accent-dark: #e8471d;
+  --color-brand-green: #2ecc71;
+  --color-brand-red: #e74c3c;
+  --color-brand-blue: #3b82f6;
+  --color-brand-purple: #8b5cf6;
+  --color-text-main: #e8eaf0;
+  --color-text-muted: #8892a4;
+  --color-text-dim: #6f7b90;
+}
+
+/* Base custom styles to retain high-fidelity theme */
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text-main);
+}
+
+/* Accessible keyboard focus. :where() keeps specificity at 0 so it never fights
+   component styles for non-focus states; :focus-visible means pointer clicks stay
+   ring-free. !important guarantees the ring shows through utilities like outline-none. */
+:where(button, a[href], [role="button"], input, select, textarea, [tabindex="0"], summary):focus-visible {
+  outline: 2px solid var(--color-accent) !important;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.tid {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-accent);
+  background: rgba(245, 166, 35, 0.08);
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+.unread-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 16px;
+  height: 16px;
+  padding: 0 5px;
+  border-radius: 8px;
+  background: var(--color-accent-dark);
+  color: #fff;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: 600;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-surface-active);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-border);
+}
