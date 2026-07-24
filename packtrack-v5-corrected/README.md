@@ -6,8 +6,7 @@
 
 This contains everything you need to run the app locally.
 
-View the app in AI Studio: [https://ai.studio/apps/be086e75-a15b-4f22-879c-e704a4f6e0ba
-](https://packtrack.ai.studio)
+View the app in AI Studio: (https://packtrack.ai.studio)
 
 ## Run Locally
 
