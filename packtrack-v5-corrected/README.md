@@ -4,9 +4,10 @@
 
 # Run and deploy your AI Studio app
 
-This contains everything you need to run your app locally.
+This contains everything you need to run the app locally.
 
-View your app in AI Studio: https://ai.studio/apps/be086e75-a15b-4f22-879c-e704a4f6e0ba
+View the app in AI Studio: [https://ai.studio/apps/be086e75-a15b-4f22-879c-e704a4f6e0ba
+](https://packtrack.ai.studio)
 
 ## Run Locally
 
